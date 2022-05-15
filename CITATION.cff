@@ -1,0 +1,9 @@
+cff-version: 1
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Maier
+    given-names: Isidor Konrad
+    orcid: https://orcid.org/000-0002-3820-2412
+title: "Minimalist Grammars - Some drafts for generation of numerals, time of day and dates"
+version: 1
+date-released: 2022-05-15
