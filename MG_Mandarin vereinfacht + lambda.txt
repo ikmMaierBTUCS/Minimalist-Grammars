@@ -1,0 +1,77 @@
+startCategory(cManNum10^8(_)).
+
+[] :: [cnix]. % epsilon
+
+[ling] :: [c0]. % 0
+
+[yi] :: [c1, -bai'shi]. % 1
+[er] :: [c1, -sh]. % 2
+[san] :: [c1, -sh]. % 3
+[si] :: [c1, -sh]. % 4
+[wu] :: [c1, -sh]. % 5
+[liu] :: [c1, -sh]. % 6
+[qi] :: [c1, -sh]. % 7
+[ba] :: [c1, -sh]. % 8
+[yiu] :: [c1, -sh]. % 9
+
+[shi] :: [c2, -yi']. % 10					% 10
+[shi] :: [=c1, c2, -yi']. % A + 10				% 1x	1A
+[shi] :: [=c1, +sh, c2, -bai2', -qian'']. % A * 10	 	% x0	A0
+[shi] :: [=c1, =csh, c2, -bai2', -qian'']. % A + 10 * B		% xy	BA
+[] :: [=c1, +sh, csh]. % epsilon
+
+[bai] :: [=cnix, =c1, c3, -qian3', -wan'']. % A * 100		% x00		B00
+[bai] :: [=cbai', =c1, c3, -qian3', -wan'']. % A + 100 * B	% x0z & x1z	BAA, AA=1A or 0A
+[] :: [=c1, =c0, cbai']. % A + 0 * B				% x0z		BA, B=0
+[] :: [=cbai'', =cbai'shi, cbai']. % A + 0 * B			% x1z		BA, B=1
+[] :: [=c1, +bai'shi, cbai'shi]. % epsilon			% 		A, A=1
+[] :: [=c2, +yi', cbai'']. % 1 * A				% 		AA, AA=1A
+[bai] :: [=cbai2', =c1, c3, -qian3', -wan'']. % A + 100 * B	% xyy		BAA, AA>19
+[] :: [=c2, +bai2', cbai2']. % 1 * A				% 		AA, AA>19
+
+[qian] :: [=cnix, =c1, c4, -wan3']. % A * 1000			% x000		B000
+[qian] :: [=cqian', =c1, c4, -wan3']. % A + 1000 * B		% x0zz, zz!=1z	BAAA, AA>19 oder AA<10
+[] :: [=cqian'', =c0, cqian']. % A + 0 * B			%		BAA, B=0, AA>19
+[] :: [=c2, +qian'', cqian'']. % 1 * A				%		AA, AA>19
+[qian] :: [=cqian2', =c1, c4, -wan3']. % A + 1000 * B		% x01ä		BAAA, 9<AAA<20
+[] :: [=cqian2'', =c0, cqian2']. % A + 0 * B			%		BAA, B=0, 9<AA<20
+[] :: [=cqian2''', =cbai'shi, cqian2'']. % A + 0 * B		%		AA, 9<AA<20 (yi davor gesprochen))
+[] :: [=c2, +yi', cqian2''']. % 1 * A				%		AA, 9<AA<20
+[qian] :: [=cqian3', =c1, c4, -wan3']. % A + 1000 * B		% xyyy		BAAA, AAA>99
+[] :: [=c3, +qian3', cqian3']. % 1 * A						AAA, AAA>99
+
+[wan] :: [=cnix, =c4, c5]. % A * 10000				% x0000			BBBB0000
+[wan] :: [=cwan', =c4, c5]. % A + 10000 * B			% x0zzz, zzz!=01z	BBBBAAAA, 1000>AAAA>19 oder AAAA<10
+[] :: [=cwan'', =c0, cwan']. % A + 0 * B			%			BAAA, B=0, AAA>19 oder AAA<10
+[] :: [=c3, +wan'', cwan'']. % 1 * A				%			AAA, AAA>19 oder AAA<10
+[wan] :: [=cwan2', =c4, c5]. % A + 10000 * B			% x001ä			BBBBAAAA, 9<AAAA<20
+[] :: [=cwan2'', =c0, cwan2']. % A + 0 * B			%			BAAA, B=0, 9<AAA<20
+[] :: [=cwan2''', =cbai'shi, cwan2'']. % A + 0 * B		%			AA, 9<AA<20 (yi davor gesprochen))
+[] :: [=c2, +yi', cwan2''']. % 1 * A				%			AA, 9<AA<20
+[wan] :: [=cwan3', =c4, c5]. % A + 10000 * B			% xyyyy			BBBBAAAA, AAAA>999
+[] :: [=c4, +wan3', cwan3']. % 1 * A				%			AAAA, AAAA>999
+
+[] :: [=c1, c2, -qian'']. % epsilon
+[] :: [=c2, c3]. % epsilon
+[] :: [=c2, +qian'', c3, -wan'']. % epsilon
+[] :: [=c3, c4]. % epsilon
+[] :: [=c4, c5]. % epsilon
+[] :: [=c0, c5]. % epsilon
+
+[] :: [=c0, +bai', c0]. % epsilon				% Schminke
+
+[] :: [=c1, +bai'shi, c1]. % epsilon
+[] :: [=c1, +sh, c1]. % epsilon
+
+[] :: [=c2, +yi', c2]. % epsilon
+[] :: [=c2, +bai2', c2]. % epsilon
+[] :: [=c2, +bai2', +qian'', c2, -bai2']. % epsilon
+[] :: [=c2, +qian'', c2]. % epsilon
+
+[] :: [=c3, +qian3', c3]. % epsilon
+[] :: [=c3, +qian3', +wan'', c3, -qian3']. % epsilon
+[] :: [=c3, +wan'', c3]. % epsilon
+
+[] :: [=c4, +wan3', c4]. % epsilon
+
+[] :: [=c5, cManNum10^8].

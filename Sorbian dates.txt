@@ -1,0 +1,137 @@
+startCategory(cDateN(_)).
+["januar"] :: [=cday, +m31, cmon]. % hA.A
+["wulki róžk"] :: [=cday, +m31, cmon]. % hA.A
+["přeni"] :: [=cday, +m31, cmon]. % hA.A
+["februar"] :: [=cday, +m29, cmon]. % hA.A+31
+["mały róžk"] :: [=cday, +m29, cmon]. % hA.A+31
+["druhi"] :: [=cday, +m29, cmon]. % hA.A+31
+["měrc"] :: [=cday, +m31, cmon]. % hA.A-306
+["nalětnik"] :: [=cday, +m31, cmon]. % hA.A-306
+["třeći"] :: [=cday, +m31, cmon]. % hA.A-306
+["apryl"] :: [=cday, +m30, cmon]. % hA.A-275
+["jutrownik"] :: [=cday, +m30, cmon]. % hA.A-275
+["štwórty"] :: [=cday, +m30, cmon]. % hA.A-275
+["meja"] :: [=cday, +f, cmon]. % hA.A-245
+["róžownik"] :: [=cday, +m31, cmon]. % hA.A-245
+["pjaty"] :: [=cday, +m31, cmon]. % hA.A-245
+["junij"] :: [=cday, +m30, cmon]. % hA.A-214
+["smažnik"] :: [=cday, +m30, cmon]. % hA.A-214
+["šesty"] :: [=cday, +m30, cmon]. % hA.A-214
+["julij"] :: [=cday, +m31, cmon]. % hA.A-184
+["pražnik"] :: [=cday, +m31, cmon]. % hA.A-184
+["sedmy"] :: [=cday, +m31, cmon]. % hA.A-184
+["awgust"] :: [=cday, +m31, cmon]. % hA.A-153
+["žnjenc"] :: [=cday, +m31, cmon]. % hA.A-153
+["wosmy"] :: [=cday, +m31, cmon]. % hA.A-153
+["september"] :: [=cday, +m30, cmon]. % hA.A-122
+["požnjenc"] :: [=cday, +m30, cmon]. % hA.A-122
+["dźewjaty"] :: [=cday, +m30, cmon]. % hA.A-122
+["oktober"] :: [=cday, +m31, cmon]. % hA.A-92
+["winowc"] :: [=cday, +m31, cmon]. % hA.A-92
+["dźesaty"] :: [=cday, +m31, cmon]. % hA.A-92
+["nowember"] :: [=cday, +m30, cmon]. % hA.A-61
+["nazymnik"] :: [=cday, +m30, cmon]. % hA.A-61
+["jědnaty"] :: [=cday, +m30, cmon]. % hA.A-61
+["december"] :: [=cday, +m31, cmon]. % hA.A-31
+["hodownik"] :: [=cday, +m31, cmon]. % hA.A-31
+["dwanaty"] :: [=cday, +m31, cmon]. % hA.A-31
+
+["přeni"] :: [cday, -m29, -m30, -m31']. % 1
+["druhi"] :: [cday, -m29, -m30, -m31']. % 2
+["třeći"] :: [cday, -m29, -m30, -m31']. % 3
+["štwórty"] :: [cday, -m29, -m30, -m31']. % 4
+["pjaty"] :: [cday, -m29, -m30, -m31']. % 5
+["šěsty"] :: [cday, -m29, -m30, -m31']. % 6
+["sedmy"] :: [cday, -m29, -m30, -m31']. % 7
+["wosmy"] :: [cday, -m29, -m30, -m31']. % 8
+["dźewjaty"] :: [cday, -m29, -m30, -m31']. % 9
+["dźesaty"] :: [cday, -m29, -m30, -m31']. % 10
+["jědnaty"] :: [cday, -m29, -m30, -m31']. % 11
+["dwanaty"] :: [cday, -m29, -m30, -m31']. % 12
+["třinaty"] :: [cday, -m29, -m30, -m31']. % 13
+["štyrnaty"] :: [cday, -m29, -m30, -m31']. % 14
+["pjatnaty"] :: [cday, -m29, -m30, -m31']. % 15
+["šěsnaty"] :: [cday, -m29, -m30, -m31']. % 16
+["sydomnaty"] :: [cday, -m29, -m30, -m31']. % 17
+["wosomnaty"] :: [cday, -m29, -m30, -m31']. % 18
+["dźewjatnaty"] :: [cday, -m29, -m30, -m31']. % 19
+["dwacty"] :: [cday, -m29, -m30, -m31']. % 20
+["dwacety"] :: [cday, -m29, -m30, -m31']. % 20
+["jenadwacty"] :: [cday, -m29, -m30, -m31']. % 21
+["jedynadwacty"] :: [cday, -m29, -m30, -m31']. % 21
+["jenadwacety"] :: [cday, -m29, -m30, -m31']. % 21
+["jedynadwacety"] :: [cday, -m29, -m30, -m31']. % 21
+["dwajadwacty"] :: [cday, -m29, -m30, -m31']. % 22
+["dwajadwacety"] :: [cday, -m29, -m30, -m31']. % 22
+["třiadwacty"] :: [cday, -m29, -m30, -m31']. % 23
+["třiadwacety"] :: [cday, -m29, -m30, -m31']. % 23
+["štyriadwacty"] :: [cday, -m29, -m30, -m31']. % 24
+["šytriadwacety"] :: [cday, -m29, -m30, -m31']. % 24
+["pjećadwacty"] :: [cday, -m29, -m30, -m31']. % 25
+["pjećadwacety"] :: [cday, -m29, -m30, -m31']. % 25
+["šěsćadwacty"] :: [cday, -m29, -m30, -m31']. % 26
+["šěsćadwacety"] :: [cday, -m29, -m30, -m31']. % 26
+["sydomadwacty"] :: [cday, -m29, -m30, -m31']. % 27
+["sydomadwacety"] :: [cday, -m29, -m30, -m31']. % 27
+["wosomadwacty"] :: [cday, -m29, -m30, -m31']. % 28
+["wosomadwacety"] :: [cday, -m29, -m30, -m31']. % 28
+["dźewjećadwacty"] :: [cday, -m29, -m30, -m31']. % 29
+["dźewjećadwacety"] :: [cday, -m29, -m30, -m31']. % 29
+["třicty"] :: [cday, -m30, -m31']. % 30
+["třicety"] :: [cday, -m30, -m31']. % 30
+["jedynatřicty"] :: [cday, -m31']. % 31
+["jedynatřicety"] :: [cday, -m31']. % 31
+
+["přenja"] :: [cday, -f]. % 1
+["druha"] :: [cday, -f]. % 2
+["třeća"] :: [cday, -f]. % 3
+["štwórta"] :: [cday, -f]. % 4
+["pjata"] :: [cday, -f]. % 5
+["šěsta"] :: [cday, -f]. % 6
+["sedma"] :: [cday, -f]. % 7
+["wosma"] :: [cday, -f]. % 8
+["dźewjata"] :: [cday, -f]. % 9
+["dźesata"] :: [cday, -f]. % 10
+["jědnata"] :: [cday, -f]. % 11
+["dwanata"] :: [cday, -f]. % 12
+["třinata"] :: [cday, -f]. % 13
+["štyrnata"] :: [cday, -f]. % 14
+["pjatnata"] :: [cday, -f]. % 15
+["šěsnata"] :: [cday, -f]. % 16
+["sydomnata"] :: [cday, -f]. % 17
+["wosomnata"] :: [cday, -f]. % 18
+["dźewjatnata"] :: [cday, -f]. % 19
+["dwacta"] :: [cday, -f]. % 20
+["dwaceta"] :: [cday, -f]. % 20
+["jenadwacta"] :: [cday, -f]. % 21
+["jedynadwacta"] :: [cday, -f]. % 21
+["jenadwaceta"] :: [cday, -f]. % 21
+["jedynadwaceta"] :: [cday, -f]. % 21
+["dwajadwacta"] :: [cday, -f]. % 22
+["dwajadwaceta"] :: [cday, -f]. % 22
+["třiadwacta"] :: [cday, -f]. % 23
+["třiadwaceta"] :: [cday, -f]. % 23
+["štyriadwacta"] :: [cday, -f]. % 24
+["šytriadwaceta"] :: [cday, -f]. % 24
+["pjećadwacta"] :: [cday, -f]. % 25
+["pjećadwaceta"] :: [cday, -f]. % 25
+["šěsćadwacta"] :: [cday, -f]. % 26
+["šěsćadwaceta"] :: [cday, -f]. % 26
+["sydomadwacta"] :: [cday, -f]. % 27
+["sydomadwaceta"] :: [cday, -f]. % 27
+["wosomadwacta"] :: [cday, -f]. % 28
+["wosomadwaceta"] :: [cday, -f]. % 28
+["dźewjećadwacta"] :: [cday, -f]. % 29
+["dźewjećadwaceta"] :: [cday, -f]. % 29
+["třicta"] :: [cday, -f]. % 30
+["třiceta"] :: [cday, -f]. % 30
+["jedynatřicta"] :: [cday, -f]. % 31
+["jedynatřiceta"] :: [cday, -f]. % 31
+
+[] :: [=cday, +m29, cday]. % hA.A
+[] :: [=cday, +m29, +m30, +m31', cday, -m29]. % hA.A
+[] :: [=cday, +m30, cday]. % hA.A
+[] :: [=cday, +m30, +m31', cday, -m30]. % hA.A
+[] :: [=cday, +m31', cday, +m31]. % hA.A
+
+[] :: [=cmon, cDateN]. % hA.Date(A)

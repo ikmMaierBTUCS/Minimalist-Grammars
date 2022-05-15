@@ -1,0 +1,149 @@
+startCategory(cHsbClock(_)).
+["jednej"] :: [=c5, +w, =cdt, +jed, c6]. % hA.A+60 eins
+["dwěmaj"] :: [=c5, +w, =cdt, +jed, c6]. % hA.A+120 zwei
+["třoch"] :: [=c5, +w, =cdt, +tro, c6]. % hA.A+180 drei
+["štyrjoch"] :: [=c5, +w, =cdt, +sty, c6]. % hA.A+240 vier
+["pjećich"] :: [=c5, +w, =cdt, +pje, c6]. % hA.A+300 fünf
+["šesćich"] :: [=c5, +w, =cdt, +ses, c6]. % hA.A-360 sechs
+["sedmich"] :: [=c5, +w, =cdt, +ses, c6]. % hA.A-300 sieben
+["wosmich"] :: [=c5, +we, =cdt, +ses, c6]. % hA.A-240 acht
+["dźewjećich"] :: [=c5, +w, =cdt, +dzw, c6]. % hA.A-180 neun
+["dźesaćich"] :: [=c5, +w, =cdt, +dzs, c6]. % hA.A-120 zehn
+["jědnaćich"] :: [=c5, +w, =cdt, +jec, c6]. % hA.A-60 elf
+["dwanaćich"] :: [=c5, +w, =cdt, +jed, c6]. % hA.A zwölf
+
+["w"] :: [=cnix, =c4, c5, -w]. % hAhB.A+B um
+["we"] :: [=cnix, =c4, c5, -we]. % hAhB.A+B um
+[] :: [=c3, c5, -w]. % hA.A
+[] :: [=c3, c5, -we]. % hA.A
+
+[] :: [c4]. % 0
+["w napoł"] :: [c4]. % -30 um halb
+["napoł"] :: [=cnix, =c2, c4]. % hAhB.A+B-30 halb
+
+["pjeć do"] :: [=cnix, =c1, c2]. % hAhB.A+B-5 fünf vor
+["pjeć po"] :: [=cnix, =c1, c2]. % hAhB.A+B+5 fünf nach
+["dźesać do"] :: [=cnix, =c1, c2]. % hAhB.A+B-10 zehn vor
+["dźesać po"] :: [=cnix, =c1, c2]. % hAhB.A+B+10 zehn nach
+[] :: [=c1, c2]. % hA.A
+
+["krótko do"] :: [c1]. % -2 kurz vor
+["krótko po"] :: [c1]. % 2 kurz nach
+[] :: [c1]. % 0
+
+[] :: [=c2, c3]. % hA.A
+["napoł"] :: [=cnix, =c2, c3]. % hAhB.A+B-30 halb
+["w napoł"] :: [c3]. % -30 um halb
+["štwórć na"] :: [=cnix, =c1, c3]. % hAhB.A+B-45 viertel
+["třištwórć na"] :: [=cnix, =c1, c3]. % hAhB.A+B-15 dreiviertel
+["bětlk na"] :: [=cnix, =c1, c3]. % hAhB.A+B-45 viertel
+["tři bětlki na"] :: [=cnix, =c1, c3]. % hAhB.A+B-15 dreiviertel
+["běrtlk na"] :: [=cnix, =c1, c3]. % hAhB.A+B-45 viertel
+["tři běrtlki na"] :: [=cnix, =c1, c3]. % hAhB.A+B-15 dreiviertel
+
+["připołdnju"] :: [=cnix, =cw, cdt, -jed]. % hAhB.A+B+720 mittag
+[] :: [cdt, -jed]. % 720 mittags (nicht erwähnt)
+["nocy"] :: [=cnix, =cw, cdt, -tro, -sty, -pje, -jed, -jec, -dzs, -dzw]. % hAhB.A+B nachts
+[] :: [cdt, -tro, -sty, -pje, -jed, -jec, -dzs, -dzw]. % 0 nachts (nicht erwähnt)
+["popołdnju"] :: [=cnix, =cw, cdt, -tro, -sty, -pje]. % hAhB.A+B+720 nachmittag
+[] :: [cdt, -tro, -sty, -pje]. % 720 nachmittag unerwähnt
+["rano"] :: [=cnix, =cw, cdt, -sty, -pje]. % hAhB.A+B morgens (vor dem semantischen Umbruch modulo 24)
+[] :: [cdt, -sty, -pje]. % 0 unerwähnt
+["rano"] :: [=cnix, =cw, cdt, -ses, -dzw]. % hAhB.A+B+720 morgens nach modulo-24-umbruch
+[] :: [cdt, -ses, -dzw]. % 720 unerwähnt
+["nawječor"] :: [=cnix, =cw, cdt, -pje]. % hAhB.A+B+720 vorabends
+[] :: [cdt, -pje]. % hA.A+720 unerwähnt
+["wječor"] :: [=cnix, =cwe, cdt, -ses, -dzw]. % hAhB.A+B abends
+[] :: [cdt, -ses, -dzw]. % 0 unerwähnt
+["dopołdnju"] :: [=cnix, =cw, cdt, -jec, -dzs, -dzw]. % hAhB.A+B+720 vormittags
+[] :: [cdt, -jec, -dzs, -dzw]. % 720 unerwähnt
+[] :: [=cdt, +tro, cdt]. % hA.A
+[] :: [=cdt, +tro, +sty, +pje, +jed, +jec, +dzs, +dzw, cdt, -tro]. % hA.A
+[] :: [=cdt, +tro, +sty, +pje, cdt, -tro]. % hA.A
+[] :: [=cdt, +sty, cdt]. % hA.A
+[] :: [=cdt, +sty, +pje, +jed, +jec, +dzs, +dzw, cdt, -sty]. % hA.A
+[] :: [=cdt, +sty, +pje, cdt, -sty]. % hA.A
+[] :: [=cdt, +pje, cdt]. % hA.A
+[] :: [=cdt, +pje, +jed, +jec, +dzs, +dzw, cdt, -pje]. % hA.A
+[] :: [=cdt, +pje, cdt, -pje]. % hA.A
+[] :: [=cdt, +jed, cdt]. % hA.A
+[] :: [=cdt, +jed, +jec, +dzs, +dzw, cdt, -jed]. % hA.A
+[] :: [=cdt, +jec, cdt]. % hA.A
+[] :: [=cdt, +jec, +dzs, +dzw, cdt, -jec]. % hA.A
+[] :: [=cdt, +dzs, cdt]. % hA.A
+[] :: [=cdt, +dzs, +dzw, cdt, -dzs]. % hA.A
+[] :: [=cdt, +dzw, cdt]. % hA.A
+[] :: [=cdt, +dzw, cdt, -dzw]. % hA.A
+[] :: [=cdt, +ses, cdt]. % hA.A
+[] :: [=cdt, +ses, +dzw, cdt, -ses]. % hA.A
+
+["w"] :: [cw]. % 0 um
+[] :: [cw]. % 0
+["we"] :: [cwe]. % 0 um
+[] :: [cwe]. % 0
+
+[] :: [cnix]. % 0
+
+
+["hodźin"] :: [=cmin2, =chour2, c6]. % hAhB.A+60*B ':'(Uhr)
+
+[] :: [cmin2]. % 0
+[] :: [=cmin1, cmin2]. % hA.A
+["dźesać"] :: [cmin2]. % 10
+["jědnaće"] :: [cmin2]. % 11
+["dwanaće"] :: [cmin2]. % 12
+["naće"] :: [=cmin1, +na, cmin2]. % hA.A+10
+["štyrnaće"] :: [cmin2]. % 14
+["pjatnaće"] :: [cmin2]. % 15
+["šěsnaće"] :: [cmin2]. % 16
+["dźewjatnaće"] :: [cmin2]. % 19
+["dwaceći"] :: [cmin2]. % 20
+["adwaceći"] :: [=cnix, =cmin1, cmin2]. % hAhB.A+B+20
+["třiceći"] :: [cmin2]. % 30
+["atřiceći"] :: [=cnix, =cmin1, cmin2]. % hAhB.A+B+30
+["štyrceći"] :: [cmin2]. % 40
+["aštyrceći"] :: [=cnix, =cmin1, cmin2]. % hAhB.A+B+40
+["pjećdźesat"] :: [cmin2]. % 50
+["apjećdźesat"] :: [=cnix, =cmin1, cmin2]. % hAhB.A+B+50
+["połsta"] :: [cmin2]. % 50
+["apołsta"] :: [=cnix, =cmin1, cmin2]. % hAhB.A+B+50
+
+["jedyn"] :: [cmin1]. % 1
+["dwaj"] :: [cmin1]. % 2
+["tři"] :: [cmin1, -na]. % 3
+["štyri"] :: [cmin1]. % 4
+["pjeć"] :: [cmin1]. % 5
+["šěsć"] :: [cmin1]. % 6
+["sydom"] :: [cmin1, -na]. % 7
+["wosom"] :: [cmin1, -na]. % 8
+["dźewjeć"] :: [cmin1]. % 9
+[] :: [=cmin1, +na, cmin1]. % hA.A
+
+["nul"] :: [chour2]. & 0
+[] :: [=chour1, chour2]. % hA.A
+["štyri"] :: [chour2]. % 4
+["pjeć"] :: [chour2]. % 5
+["šěsć"] :: [chour2]. % 6
+["dźewjeć"] :: [chour2]. % 9
+["dźesać"] :: [chour2]. % 10
+["jědnaće"] :: [chour2]. % 11
+["dwanaće"] :: [chour2]. % 12
+["naće"] :: [=chour1, +na, chour2]. % A+10
+["štyrnaće"] :: [chour2]. % 14
+["pjatnaće"] :: [chour2]. % 15
+["šěsnaće"] :: [chour2]. % 16
+["dźewjatnaće"] :: [chour2]. % 19
+["dwaceći"] :: [chour2]. % 20
+["adwaceći"] :: [=chour1, +dw, chour2]. % A+20
+
+["jedyn"] :: [chour1, -dw]. % 1
+["dwaj"] :: [chour1, -dw]. % 2
+["tři"] :: [chour1, -dw, -na]. % 3
+["sydom"] :: [chour1, -na]. % 7
+["wosom"] :: [chour1, -na]. % 8
+[] :: [=chour1, +dw, chour1]. % hA.A
+[] :: [=chour1, +dw, +na, chour1, -na]. % hA.A
+[] :: [=chour1, +na, chour1]. % hA.A
+
+[] :: [=c6, cHsbClock]. % hA.A
+

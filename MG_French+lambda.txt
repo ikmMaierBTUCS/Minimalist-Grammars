@@ -1,0 +1,76 @@
+startCategory(cFra10^6(_)).
+
+[un] :: [c1, -et']. % 1
+[deux] :: [c1, -cent]. % 2
+[trois] :: [c1, -cent]. % 3
+[quatre] :: [c1, -vi, -cent]. % 4
+[cinq] :: [c1, -cent]. % 5
+[six] :: [c1, -cent]. % 6
+[sept] :: [c1, -dix', -cent]. % 7
+[huit] :: [c1, -dix', -cent]. % 8
+[neuf] :: [c1, -dix', -cent]. % 9
+
+[] :: [=c1, +dix', c1]. % epsilon
+[] :: [=c1, +dix', +cent, c1, -dix']. % epsilon
+[] :: [=c1, +vi, c1]. % epsilon
+[] :: [=c1, +vi, +cent, c1, -vi]. % epsilon
+[] :: [=c1, +et', c1]. % epsilon
+[] :: [=c2, +xante', c2]. % epsilon
+[] :: [=c3, +mil', c3]. % epsilon
+[] :: [=c4, +mil, c4]. % epsilon
+
+[dix] :: [=cdix', c2, -xante']. % A + 20
+[] :: [=c1, +dix', cdix]. % 1 * A
+[vingtet] :: [=cet', c3]. % A + 21
+[] :: [=c1, +et', cet']. % 0 * A
+[vingt] :: [=cngt', c3]. % A + 20
+[] :: [=c1, +cent, cngt']. % 1 * A
+
+[trenteet] :: [=cet', c3]. % A + 31
+[trente] :: [=cngt', c3]. % A + 30
+
+[quaranteet] :: [=cet', c3]. % A + 41
+[quarante] :: [=cngt', c3]. % A + 40
+
+[quintanteet] :: [=cet', c3]. % A + 51
+[quintante] :: [=cngt', c3]. % A + 50
+
+[soixanteet] :: [=cet', c3]. % A + 61
+[soixante] :: [=cxante', c3]. % A + 60
+[] :: [=c2, +xante', cxante']. % 1 * A
+[vingt] :: [=cxante', =cvi, c3]. % A + 0 * B + 80
+[] :: [=c1, +vi, cvi]. % epsilon
+[vingtet] :: [=cet', =cvi, c3]. % 0 * A + 0 * B + 81
+[cent] :: [=c3, c4, -mil]. % A + 100
+[cents] :: [=c3, =ccent, c4, -mil]. % A + 100 * B
+[] :: [=c1, +cent, ccent]. % epsilon
+[cent] :: [c4, -mil]. % 100
+[cents] :: [=c1, +cent, c4, -mil]. % A * 100
+[mille] :: [=c4, c5]. % A + 1000
+[mille] :: [=c4, =cmil, c5]. % A + 1000 * B
+[] :: [=c4, +mil, cmil]. % epsilon
+[mille] :: [c5]. % 1000
+[mille] :: [=c4, +mil, c5]. % A * 1000
+
+[] :: [=c1, c2]. % epsilon
+[] :: [=c1, +cent, c2, -xante']. % epsilon
+[] :: [=c2, c3]. % epsilon
+[] :: [=c2, +xante', c3, -mil']. % epsilon
+[] :: [=c3, c4]. % epsilon
+[] :: [=c3, +mil', c4, -mil]. % epsilon
+[] :: [=c4, c5]. % epsilon
+
+[dix] :: [c2, -xante']. % 10
+[onze] :: [c2, -xante']. % 11
+[douze] :: [c2, -xante']. % 12
+[treize] :: [c2, -xante']. % 13
+[quatorze] :: [c2, -xante']. % 14
+[quinze] :: [c2, -xante']. % 15
+[seize] :: [c2, -xante']. % 16
+[vingt] :: [c3, -mil']. % 20
+[trente] :: [c3, -mil']. % 30
+[quarante] :: [c3, -mil']. % 40
+[quintante] :: [c3, -mil']. % 50
+[soixante] :: [c3, -mil']. % 60
+
+[] :: [=c5, cFra10^6].

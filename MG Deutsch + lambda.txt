@@ -1,0 +1,57 @@
+startCategory(cDeuNum10^6(_)).
+[zig] :: [=c1, +zi, c2, -taus']. % 10 * A	%Hauptfunktionen
+[zig] :: [=c1, +zi, cundZIG]. % 10 * A
+[und] :: [ =cundZIG, =cun, c2, -taus']. % A + B
+[] :: [=c1, +un, cun]
+[zehn] :: [=c1, +zeh, c2, -taus']. % A + 10
+[hundert] :: [=c2, =cun, c3, -taus]. % A + 100 * B
+[hundert] :: [=c1, +un, c3, -taus]. % 100 * A
+[einhundert] :: [=c2, c3, -taus]. % A + 100
+[einhundert] :: [c3, -taus]. % 100
+[tausend] :: [=c3, =ctaus, c4]. % A + 1000 * B
+[] :: [=c3, +taus, ctaus]
+[tausend] :: [=c3, +taus, c4]. % 1000 * A
+[eintausend] :: [=c3, c4]. % A + 1000
+[eintausend] :: [c4]. % 1000
+[] :: [=c1, +zi, c1]. % epsilon		%Schminke
+[] :: [=c1, +zi, +zeh, +un, c1, -zi]. % epsilon
+[] :: [=c1, +ßi, c1]. % epsilon
+[] :: [=c1, +ßi, +zeh, +un, c1, -ßi]. % epsilon
+[] :: [=c1, +zeh, c1]. % epsilon
+[] :: [=c1, +zeh, +un, c1, -zeh]. % epsilon
+[] :: [=c1, +un, c1]. % epsilon
+[] :: [=c2, +taus', c2]. % epsilon
+[] :: [=c3, +taus, c3]. % epsilon
+[] :: [=c3, c4]. % epsilon		%Upgrader
+[] :: [=c2, +taus', c3, -taus]. % epsilon
+[] :: [=c2, c3]. % epsilon
+[] :: [=c1, +un, c2, -taus']. % epsilon
+[] :: [=c1, c2]. % epsilon
+[eins] :: [c1].	% 1		%c1
+[zwei] :: [c1, -un]. % 2
+[drei] :: [c1, -ßi, -zeh, -un]. % 3
+[vier] :: [c1, -zi, -zeh, -un]. % 4
+[fünf] :: [c1, -zi, -zeh, -un]. % 5
+[sechs] :: [c1, -un]. % 6
+[sieben] :: [c1, -un]. % 7
+[acht] :: [c1, -zi, -zeh, -un]. % 8
+[neun] :: [c1, -zi, -zeh, -un]. % 9
+[zehn] :: [c2, -taus']. % 10		%diverse Ausnahmen
+[elf] :: [c2, -taus']. % 11
+[zwölf] :: [c2, -taus']. % 12
+[sechzehn] :: [c2, -taus']. % 16
+[siebzehn] :: [c2, -taus']. % 17
+[zwanzig] :: [c2, -taus']. % 20
+[einundzwanzig] :: [c2, -taus']. % 21
+[sechzig] :: [c2, -taus']. % 60
+[einundsechzig] :: [c2, -taus']. % 61
+[siebzig] :: [c2, -taus']. % 70
+[einundsiebzig] :: [c2, -taus']. % 71
+[undzwanzig] :: [=c1, +un, c2, -taus']. % A + 20
+[ßig] :: [=c1, +ßi, c2, -taus']. % 0 * A + 30
+[ßig] :: [=c1, +ßi, cundZIG]. % 0 * A + 30
+[einund] :: [=cundZIG, c2, -taus']. % A + 1
+[undsechzig] :: [=c1, +un, c2, -taus']. % A + 60
+[undsiebzig] :: [=c1, +un, c2, -taus']. % A + 70
+
+[] :: [=c4, cDeuNum10^6]. % epsilon

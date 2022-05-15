@@ -1,0 +1,139 @@
+startCategory(cHsbNum10^15(_)).
+[jedyn] :: [c1, -mon'].				% 1
+[dwaj] :: [c1, -maj', -tys''].			% 2
+[tři] :: [c1, -ce, -sta, -na, -tys''].		% 3
+[štyri] :: [c1, -sta, -tys''].			% 4
+[pjeć] :: [c1, -dz, -tys''].			% 5
+[šěsć] :: [c1, -dz, -tys''].			% 6
+[sydom] :: [c1, -na, -dz, -tys''].		% 7
+[wosom] :: [c1, -na, -dz, -tys''].		% 8
+[dźewjeć] :: [c1, -dz, -tys''].			% 9
+[] :: [=c1, +mon', c1].				% epsilon
+[] :: [=c1, +maj', c1].				% epsilon
+[] :: [=c1, +maj', +tys'', c1, -maj'].		% epsilon
+[] :: [=c1, +ce, c1].				% epsilon
+[] :: [=c1, +ce, +sta, +na, +tys'', c1, -ce].	% epsilon
+[] :: [=c1, +sta, c1].				% epsilon
+[] :: [=c1, +sta, +na, +tys'', c1, -sta].	% epsilon
+[] :: [=c1, +sta, +tys'', c1, -sta].		% epsilon
+[] :: [=c1, +na, c1].				% epsilon
+[] :: [=c1, +na, +tys'', c1, -na].		% epsilon
+[] :: [=c1, +na, +dz, +tys'', c1, -na].		% epsilon
+[] :: [=c1, +dz, c1].				% epsilon
+[] :: [=c1, +dz, +tys'', c1, -dz].		% epsilon
+
+[] :: [=c1, c2].				% epsilon
+[] :: [=c1, +tys'', c2, -tys'].			% epsilon
+[] :: [=c1, +dz, c2, -mow'].			% epsilon
+[dźesać] :: [c2, -mow', -tys'].			% 10
+[jědnaće] :: [c2, -mow', -tys'].		% 11
+[dwanaće] :: [c2, -mow', -tys'].		% 12
+[naće] :: [=c1, +na, c2, -mow', -tys'].		% A+10		% 13,17,18
+[štyrnaće] :: [c2, -mow', -tys'].		% 14
+[pjatnaće] :: [c2, -mow', -tys'].		% 15
+[šěsnaće] :: [c2, -mow', -tys'].		% 18
+[dźewjatnaće] :: [c2, -mow', -tys'].		% 19
+[dwaceći] :: [c2, -mow', -tys'].		% 20
+[adwaceći] :: [=cnix, =c1, c2, -mow', -tys'].	% X+20		% 2X
+[ceći] :: [=c1, +ce, c2, -mow', -tys'].		% 0*A+30	% 30
+[a] :: [=cdzes, =c1, c2, -mow', -tys'].		% A+B		% 3X and YX for 4<Y<10
+[ceći] :: [=c1, +ce, cdzes].			% 0*A+30	% 3X
+[štyrceći] :: [c2, -mow', -tys'].		% 40
+[aštyrceći] :: [=cnix, =c1, c2, -mow', -tys'].	% A+40		% 4X
+[połsta] :: [c2, -mow', -tys'].			% 50
+[apołsta] :: [=cnix, =c1, c2, -mow', -tys'].	% A+50		% 5X
+[dźesat] :: [=c1, +dz, c2, -mow', -tys'].	% 10*A		% Y0 for 4<Y<10
+[dźesat] :: [=c1, +dz, cdzes].			% 10*A		% YX for 4<Y<10
+[] :: [=c2, +tys', c2].				% epsilon
+[] :: [=c2, +mow', c2].				% epsilon
+[] :: [=c2, +mow', +tys', c2, +mow'].		% epsilon
+
+[] :: [=c2, c3].				% epsilon
+[] :: [=c2, +mow', c3, -mow].			% epsilon
+[] :: [=c2, +tys', c3, -tys].			% epsilon
+[] :: [=c1, +mon', c3, -mon].			% epsilon
+[] :: [=c1, +maj', c3, -maj].			% epsilon
+[sto] :: [c3, -mow, -tys].			% 100
+[stoajedyn] :: [c3, -mon, -tys].		% 101
+[stoadwaj] :: [c3, -maj, -tys].			% 102
+[stoa] :: [=ctoa1, c3, -my, -tys].		% A+100		% 103,104
+[] :: [=c1, +sta, ctoa1].			% epsilon
+[stoa] :: [=ctoa2, c3, -mow, -tys].		% A+100		% 1XX for XX>4
+[] :: [=c2, +mow', ctoa2].			% epsilon
+[dwěsćě] :: [c3, -mow, -tys].			% 200
+[dwěsćěajedyn] :: [c3, -mon, -tys].		% 201
+[dwěsćěadwaj] :: [c3, -maj, -tys].		% 202
+[dwěsćěa] :: [=ctoa1, c3, -my, -tys].		% A+200		% 203,204
+[dwěsćěa] :: [=ctoa2, c3, -mow, -tys].		% A+200		% 2XX for XX>4
+[sta] :: [=c1, +sta, c3, -mow, -tys].		% 100*A		% 300, 400
+[staajedyn] :: [=c1, +sta, c3, -mon, -tys].	% 100*A+1	% 301, 401
+[staadwaj] :: [=c1, +sta, c3, -maj, -tys].	% 100*A+2	% 302, 402
+[staa] :: [=ctoa1, =csta, c3, -my, -tys].	% 100*B+A	% 303,304,403,404
+[] :: [=c1, +sta, csta].			% epsilon
+[staa] :: [=ctoa2, =csta, c3, -mow, -tys].	% 100*B+A	% YXX for XX>4 and Y=3,4
+[stow] :: [=c1, +dz, c3, -mow, -tys].		% 100*A		% X00 for 4<X<10
+[stowajedyn] :: [=c1, +dz, c3, -mon, -tys].	% 100*A+1	% X01 for 4<X<10
+[stowadwaj] :: [=c1, +dz, c3, -maj, -tys].	% 100*A+2	% X02 for 4<X<10
+[stowa] :: [=ctoa1, =csto, c3, -my, -tys].	% 100*B+A	% X03,X04 for 4<X<10
+[] :: [=c1, +dz, csto].				% epsilon
+[staa] :: [=ctoa2, =csto, c3, -mow, -tys].	% 100*B+A	% YXX for XX>4 and 4<Y<10
+[] :: [=c3, +mon c3].				% epsilon
+[] :: [=c3, +maj c3].				% epsilon
+[] :: [=c3, +my c3].				% epsilon
+[] :: [=c3, +mow c3].				% epsilon
+[] :: [=c3, +tys c3].				% epsilon
+[] :: [=c3, +mon, +tys, c3, -mon].		% epsilon
+[] :: [=c3, +maj, +tys, c3, -maj].		% epsilon
+[] :: [=c3, +my, +tys, c3, -my].		% epsilon
+[] :: [=c3, +mow, +tys, c3, -mow].		% epsilon
+
+[] :: [=c3, c4].				% epsilon
+[tysac] :: [c4].				% 1000
+[tysac] :: [=c3, c4].				% A+1000	% 1XXX
+[tysac] :: [=cnix, =ctys, c4].			% 1000*B	% YYY.000
+[] :: [=c3, +tys, ctys].			% epsilon
+[tysac] :: [=c3, =ctys, c4].			% 1000*B+A	% YYY.XXX
+
+[] :: [=c4, c5].				% epsilon
+[milion] :: [c5].				% 1000000
+[milion] :: [=c4, c5].				% A+1000000	% 1.XXX.XXX
+[milion] :: [=cnix, =cmon, c5].			% 1000000*B	% Y01.000.000
+[] :: [=c3, +mon, cmon].			% epsilon
+[milion] :: [=c4, =cmon, c5].			% 1000000*B+A	% Y01.XXX.XXX
+[milionaj] :: [=cnix, =cmaj, c5].		% 1000000*B	% Y02.000.000
+[] :: [=c3, +maj, cmaj].			% epsilon
+[milionaj] :: [=c4, =cmaj, c5].			% 1000000*B+A	% Y02.XXX.XXX
+[miliony] :: [=cnix, =cmy, c5].			% 1000000*B	% Y0Z.000.000 for Z=3,4
+[] :: [=c3, +my, cmy].				% epsilon
+[miliony] :: [=c4, =cmy, c5].			% 1000000*B+A	% Y0Z.XXX.XXX for Z=3,4
+[milionow] :: [=cnix, =cmow, c5].		% 1000000*B	% YZZ.000.000 for ZZ>4
+[] :: [=c3, +mow, cmow].			% epsilon
+[milionow] :: [=c4, =cmow, c5].			% 1000000*B+A	% YZZ.XXX.XXX for ZZ>4
+
+[] :: [=c5, c6].				% epsilon
+[miliard] :: [c6].				% 1000000000
+[miliard] :: [=c5, c6].				% A+1000000000		% 1.XXX.XXX.XXX
+[miliard] :: [=cnix, =cmon, c6].		% 1000000000*B		% Y01.000.000.000
+[miliard] :: [=c5, =cmon, c6].			% 1000000000*B+A	% Y01.XXX.XXX.XXX
+[miliardaj] :: [=cnix, =cmaj, c6].		% 1000000000*B		% Y02.000.000.000
+[miliardaj] :: [=c5, =cmaj, c6].		% 1000000000*B+A	% Y02.XXX.XXX.XXX
+[miliardy] :: [=cnix, =cmy, c6].		% 1000000000*B		% Y0Z.000.000.000 for Z=3,4
+[miliardy] :: [=c5, =cmy, c6].			% 1000000000*B+A	% Y0Z.XXX.XXX.XXX for Z=3,4
+[miliardow] :: [=cnix, =cmow, c5].		% 1000000000*B		% YZZ.000.000.000 for ZZ>4
+[miliardow] :: [=c5, =cmow, c6].		% 1000000000*B+A	% YZZ.XXX.XXX.XXX for ZZ>4
+
+[] :: [=c6, c7].				% epsilon
+[bilion] :: [c7].				% 1000000000000
+[bilion] :: [=c6, c7].				% A+1000000000000		% 1.XXX.XXX.XXX.XXX
+[bilion] :: [=cnix, =cmon, c7].			% 1000000000000*B		% Y01.000.000.000.000
+[bilion] :: [=c6, =cmon, c7].			% 1000000000000*B+A		% Y01.XXX.XXX.XXX.XXX
+[bilionaj] :: [=cnix, =cmaj, c7].		% 1000000000000*B		% Y02.000.000.000.000
+[bilionaj] :: [=c6, =cmaj, c7].			% 1000000000000*B+A		% Y02.XXX.XXX.XXX.XXX
+[biliony] :: [=cnix, =cmy, c7].			% 1000000000000*B		% Y0Z.000.000.000.000 for Z=3,4
+[biliony] :: [=c6, =cmy, c7].			% 1000000000000*B+A		% Y0Z.XXX.XXX.XXX.XXX for Z=3,4
+[bilionow] :: [=cnix, =cmow, c7].		% 1000000000000*B		% YZZ.000.000.000.000 for ZZ>4
+[bilionow] :: [=c6, =cmow, c7].			% 1000000000000*B+A		% YZZ.XXX.XXX.XXX.XXX for ZZ>4
+
+[] :: [cnix].					% epsilon
+
+[] :: [=c7, cHsbNum10^15].			% epsilon
