@@ -1,9 +1,19 @@
-cff-version: 1
-message: "If you use this software, please cite it as below."
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Minimalist Grammars - Numerals and expressions for
+  date and time of day
+message: Usable with MG parsers for Stabler's style (1997)
+type: dataset
 authors:
-  - family-names: Maier
-    given-names: Isidor Konrad
-    orcid: https://orcid.org/000-0002-3820-2412
-title: "Minimalist Grammars - Some drafts for generation of numerals, time of day and dates"
-version: 1
-date-released: 2022-05-15
+  - given-names: Isidor Konrad
+    family-names: Maier
+    email: maier@b-tu.de
+    affiliation: BTU Cottbus Senftenberg
+    orcid: 'https://orcid.org/0000-0002-3820-2412?lang=en'
+  - given-names: Johannes Ferdinand Joachim
+    family-names: Kuhn
+    email: johannesFK.kuhn@b-tu.de
+    affiliation: BTU Cottbus Senftenberg
