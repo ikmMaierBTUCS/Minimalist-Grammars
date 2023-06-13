@@ -1,0 +1,49 @@
+Deutsch
+S -> BtausendA, tausendA, eintausendA, eintausend, A
+A -> DhundertC, Dhundert, einhundertC, einhundert, C
+B -> DhundertC, Dhundert, einhundertC, einhundert, E
+C -> DundFzig, Fzig, Dundsiebzig, siebzig, Dundsechzig, sechzig, DundGssig, Gssig, Dundzwanzig, zwanzig, Hzehn, siebzehn, sechzehn, zwölf, elf, zehn, I
+D -> zwei, drei, vier, fünf, sechs, sieben, acht, neun
+E -> DundFzig, Fzig, Dundsiebzig, siebzig, Dundsechzig, sechzig, DundGssig, Gssig, Dundzwanzig, zwanzig, Hzehn, siebzehn, sechzehn, zwölf, elf, zehn, D
+F -> vier, fünf, acht, neun
+G -> drei
+H -> drei, vier, fünf, acht, neun
+I -> eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun
+
+
+English
+S -> AthousandA, Athousand, thousand, A
+A -> ChundredandB, Chundred, B
+B -> Dty-C, Dty, Ey-C, Ey, fifty-C, fifty, thirty-C, thirty, twenty-C, twenty, Dteen, Eeen, fifteen, thirteen, twelve, eleven, ten, C
+C -> one, two, three, four, five, six, seven, eight, nine
+D -> four, six, seven, nine
+E -> eight
+
+French
+S -> BmilleA, Bmille, milleA, mille, A
+A -> DcentsC, Dcents, centC, cent, C
+B -> DcentsC, Dcents, centC, cent, E
+C -> GvingtetH, GvingtI, soixanteetH, soixanteI, quintanteetH, quintanteD, quaranteetH, quaranteD, trenteetH, trenteD, vingtetH, vingtD, J
+D -> deux, trois, quatre, cinq, six, sept, huit, neuf
+E -> GvingtetH, GvingtI, soixanteetH, soixanteI, quintanteetH, quintanteD, quaranteetH, quaranteD, trenteetH, trenteD, vingtetH, vingtD, I
+G -> quatre
+H -> un
+I -> dixK, seize, quinze, quatorze, treize, douze, onze, dix, D
+J -> dixK, seize, quinze, quatorze, treize, douze, onze, dix, L
+K -> sept, huit, neuf
+L -> un, deux, trois, quatre, cinq, six, sept, huit, neuf
+
+Mandarin
+S -> AwanB, AwanOC, AwanOPD, Awan, A, O
+A -> EqianF, EqianOG, EqianOPD, Eqian, H
+B -> EqianF, EqianOG, EqianOPD, Eqian
+C -> EbaiG, EbaiOPD, Ebai, J
+D -> shiE, shi
+E -> yi, er, san, si, wu, liu, qi, ba, yiu
+F -> EbaiG, EbaiOPD, Ebai
+G -> KshiE, Kshi
+H -> KshiE, Kshi, shiE, shi, E
+J -> KshiE, Kshi, E
+K -> er, san, si, wu, liu, qi, ba, yiu
+O -> ling
+P -> yi
