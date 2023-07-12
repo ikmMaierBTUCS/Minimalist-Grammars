@@ -68,6 +68,24 @@ Y -> EstowaG, GstaaG, dwěsćěaG, stoaG, G
 Z -> EstowaE, Estow, GstaaE, Gsta, dwěsćěaE, dwěsćě, stoaE, sto, L
 L -> FaHdźesat, Hdźesat, Fapołsta, połsta, Faštyrceći, štyrceći, FaHceći, Hceći, Fadwaceći, dwaceći, Inaće, džewjatnaće, šěsnaće, pjatnaće, štyrnaće, dwanaće, jědnaće, dźesać, H
 
+Upper Sorbian Clock
+S -> A B jednej, A B dwěmaj, A C třoch, A D štyrjoch, A E pjećich A F šesćich, A F sedmich, G F wosmich, A H dźewjećich, A I dźesaćich, A I jědnaćich, A B dwanaćich
+A -> L w, M
+G -> L we, M
+L -> €, w napoł, N napoł
+M -> N, N napoł, w napoł, O štwórč na, O třištwórč na, O bětlk na, O tři bětlk na, O běrtlk na, O tři běrtlk na
+N -> O pjeć do, O pjeć po, O dźesać do, O dźesać po, O
+O -> krótko do, krótko po, €
+B -> P připołdnju, €, P nocy, €
+C -> P nocy, €, P popołdnju, €
+D -> P nocy, €, P popołdnju, €, P rano, €
+E -> P nocy, €, P rano, €, P nawječor, €
+F -> P rano, €, Q wječor, €
+H -> P nocy, €, P rano, €, Q wječor, €, P dopołdnju, €
+I -> P nocy, €, P dopołdnju, €
+P -> w, €
+Q -> we, €
+
 Upper Sorbian Dates
 S -> A januar, A wulki róžk, A přeni, B februar, B mały róžk, B druhi, A měrc, A nalětnik, A třeći, C apryl, C jutrownik, C štwórty, D meja, A róžownik, A pjaty, C junij, C smažnik, C šesty, A julij, A pražnik, A sedmy, A awgust, A žnjenc, A wosmy, C september, C požnjenc, C dźewjaty, A oktober, A winowc, Adźesaty, C nowember, C nazymnik, C jědnaty, A december, A hodownik, A dwanaty
 A -> přeni, druhi, třeći, štwórty, pjaty, šěsty, sedmy, wosmy, dźewjaty, dźesaty, jědnaty, dwanaty, třinaty, štyrnaty, pjatnaty, šěsnaty, sydomnaty, wosomnaty, dźewjatnaty, dwacty, dwacety, jenadwacty, jedynadwacty, jenadwacety, jedynadwacety, dwajadwacty, dwajadwacety, třiadwacty, třiadwacety, štyriadwacty, štyriadwacety, pjećadwacty, pjećadwacety, šěsćadwacty, šěsćadwacety, sydomadwacty, sydomadwacety, wosomadwacty, wosomadwacety, dźewjećadwacty, dźewjećadwacety, třicty, třicety, jedyntřicty, jedyntřicety
